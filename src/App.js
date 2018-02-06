@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import METHODEMAP from './Coponnent/METHODUMAP';
 import METHODUTOGGLE from './Coponnent/METHODUTOGGLE';
 import SELECTEURIMG from './Coponnent/SELECTEURIMG';
-import FUNC from './Coponnent/FUNTIONDEBAZ';
+import JCSEKETKRI from './Coponnent/JCSEKETKRI';
 import './App.css';
 
 class App extends Component {
@@ -17,10 +17,13 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <FUNC/>
+        <JCSEKETKRI />
+        
       </div>
     );
   }
 }
 
 export default App;
+
+/* -- <FUNC/> -- Cet fonction a un petit bug a résoudre ultérueurement */

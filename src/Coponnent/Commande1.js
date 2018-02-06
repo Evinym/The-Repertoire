@@ -51,8 +51,6 @@ console.log(this.state.donner);
             </ul>
             <form onSubmite={this.addName} ></form>
             <PANN tab={this.state.donner} delete={this.delete} />
-
-
       
       </div>
     );
