@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 
 class JCSEKETKRI extends Component {
-    render() {
+    state = {
+        inputValue: '',
+      }
+    
+      onChange = e => {
+        this.setState({
+          inputValue: e.target.value
+        })
+      }
+   
+      render() {
+    
         return (
-            <div>
-                <input type="text"/>
-                <p>le monde est aussi beau de jour que de nuit</p>
-                
-            </div>
+          <div>
+            <h1>To Do List</h1>
+    
+              <input type="text" value={this.state.inputValue} onChange={this.onChange}/>
+
+            <p>{this.state.inputValue}</p>
+
+          </div>
         );
+      }
     }
-}
 
 export default JCSEKETKRI;

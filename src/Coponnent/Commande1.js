@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import PANNIER from './PANNIER';
-import PANN from './PONG';
-import COCA1 from './images/coca1.jpeg';
-import './App.css';
+
+import PANN from './Commande2';
+import COCA1 from '../images/rosa.jpg';
+import '../App.css';
 
 const produits= [
-  {name:"coca",price:"2", src:"COCA1"}
+  {name:"coca",price:"2", src:COCA1}
 ]
 
-class App extends Component {
+class Commande1 extends Component {
   state={
     donner:[],
   }
@@ -42,7 +42,7 @@ console.log(this.state.donner);
                     return(
                         <li key={index}>
                         <p>{element.name}</p>
-                        <img src={element.src} height="150px" width="75px" />
+                        <img src={element.src} height="150px" width="150px" />
                         <p onChange={this.onChange}>{element.price}</p>
                         <button onClick={()=>this.addName(element)}>name</button>
                         </li>
@@ -56,4 +56,4 @@ console.log(this.state.donner);
     );
   }
 }
-export default App;
+export default Commande1;

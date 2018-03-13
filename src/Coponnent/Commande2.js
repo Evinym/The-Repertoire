@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class PONG extends Component {
+class commande2 extends Component {
 
     
     render() {
@@ -19,4 +19,4 @@ class PONG extends Component {
     }
 }
 
-export default PONG;
+export default commande2;

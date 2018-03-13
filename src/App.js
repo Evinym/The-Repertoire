@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import METHODEMAP from './Coponnent/METHODUMAP';
-import METHODUTOGGLE from './Coponnent/METHODUTOGGLE';
-import SELECTEURIMG from './Coponnent/SELECTEURIMG';
-import JCSEKETKRI from './Coponnent/JCSEKETKRI';
+
+import Decrem from './Coponnent/Decrementation';
+
 import './App.css';
 
 class App extends Component {
@@ -17,7 +16,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <JCSEKETKRI />
+
+        <Decrem />
         
       </div>
     );

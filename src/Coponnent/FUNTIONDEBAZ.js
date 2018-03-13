@@ -4,6 +4,7 @@ class FUNCTIONDEBAZ extends Component {
 
     state={
         backgroundColor:"red",
+        backgroundColor2:"black",
         width:"200px",
         height:"200px"
       }
@@ -18,15 +19,15 @@ class FUNCTIONDEBAZ extends Component {
       
       changeColor = () => {
         this.setState({
-          backgroundColor: "yellow"
+          backgroundColor2: "yellow"
         })
       }
 
     render() {
         return (
             <div>
-                <div className="box" style={{backgroundColor}}  onClick={this.changeColor} ></div>
-                <div className="tic" onClick={this.changeTop} ></div>        
+                <div style={{backgroundColor, height="50px", width="50px"}}  onClick={this.changeTop} ></div>
+                <div style={{backgroundColor2, height="50px", width="50px"}} onClick={this.changeColor} ></div>        
             </div>
         );
     }
