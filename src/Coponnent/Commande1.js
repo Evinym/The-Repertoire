@@ -1,8 +1,26 @@
 import React, { Component } from 'react';
 
-import PANN from './Commande2';
 import COCA1 from '../images/rosa.jpg';
 import '../App.css';
+
+class PANN extends Component {
+
+  render() {
+      return (
+          <div>
+              <ul>
+              { this.props.tab.map((el, i) => {
+                      return (
+                          <li key={i}>{el}<button onClick={() => this.props.delete(i)}>{i}</button></li>
+                      )
+                  })
+                  }
+              </ul>
+          </div>
+      );
+  }
+}
+
 
 const produits= [
   {name:"coca",price:"2", src:COCA1}

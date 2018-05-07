@@ -1,5 +1,23 @@
 import React, { Component } from 'react';
 
+
+class TabList extends Component {
+    render() {
+        return (
+            <ul>
+                {
+                    this.props.tab.map((el, i) => {
+                        return (
+                            <li key={i}>{el}<button onClick={() => this.props.delete(i)}>{i}</button></li>
+                        )
+                    })
+                }
+            </ul>
+        );
+    }
+}
+
+
 class Todolist extends Component {
     state = {
         inputValue: '',
@@ -36,16 +54,7 @@ class Todolist extends Component {
                     <button >SEND</button>
                 </form>
 
-
-                <ul>
-                    {
-                        this.state.list.map((el, i) => {
-                            return (
-                                <li key={i}>{el}<button onClick={this.delete(i)}>{i}</button></li>
-                            )
-                        })
-                    }
-                </ul>    
+                <TabList tab={this.state.list} delete={this.delete} />   
 
             </div>
         );
